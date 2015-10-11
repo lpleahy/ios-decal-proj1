@@ -9,9 +9,8 @@
 import UIKit
 
 class Task {
-    
-    let taskName: String
-    let dateCreated: NSDate
+    var taskName: String
+    var dateCreated: NSDate
     
     init?(taskName: String) {
         self.taskName = taskName

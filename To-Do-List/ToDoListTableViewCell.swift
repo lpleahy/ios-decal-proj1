@@ -10,6 +10,7 @@ import UIKit
 
 class ToDoListTableViewCell: UITableViewCell {
 
+    // MARK: Properties
     @IBOutlet weak var cellLabel: UILabel!
     
     override func awakeFromNib() {
@@ -22,5 +23,5 @@ class ToDoListTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

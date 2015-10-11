@@ -8,28 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0C5FAC901BB3A43C005193F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FAC8F1BB3A43C005193F8 /* AppDelegate.swift */; };
-		0C5FAC921BB3A43C005193F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FAC911BB3A43C005193F8 /* ViewController.swift */; };
 		0C5FAC951BB3A43C005193F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC931BB3A43C005193F8 /* Main.storyboard */; };
 		0C5FAC971BB3A43C005193F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC961BB3A43C005193F8 /* Assets.xcassets */; };
 		0C5FAC9A1BB3A43C005193F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC981BB3A43C005193F8 /* LaunchScreen.storyboard */; };
-		0C8E86921BC9DD8C005D18AE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E86911BC9DD8C005D18AE /* Task.swift */; settings = {ASSET_TAGS = (); }; };
-		0C8E86951BC9DF29005D18AE /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		0C8E86961BC9DF29005D18AE /* TaskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		0CAA0AD11BC9DBF0001E5F74 /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E861BCA2DFF00BCA6FC /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0E841BCA2DFF00BCA6FC /* ToDoListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E871BCA2DFF00BCA6FC /* ToDoListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA0E851BCA2DFF00BCA6FC /* ToDoListTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E891BCA2E0B00BCA6FC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0E881BCA2E0B00BCA6FC /* Task.swift */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E8E1BCA313000BCA6FC /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0E8C1BCA313000BCA6FC /* ToDoListTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E8F1BCA313000BCA6FC /* ToDoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA0E8D1BCA313000BCA6FC /* ToDoListTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E9A1BCA42C600BCA6FC /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0E981BCA42C600BCA6FC /* AddTaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0CAA0E9B1BCA42C600BCA6FC /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA0E991BCA42C600BCA6FC /* AddTaskViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C5FAC8C1BB3A43C005193F8 /* To-Do-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5FAC8F1BB3A43C005193F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C5FAC911BB3A43C005193F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C5FAC941BB3A43C005193F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C5FAC961BB3A43C005193F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C5FAC991BB3A43C005193F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5FAC9B1BB3A43C005193F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C8E86911BC9DD8C005D18AE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
-		0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewController.xib; sourceTree = "<group>"; };
-		0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoListTableViewCell.swift; path = ../ToDoListTableViewCell.swift; sourceTree = "<group>"; };
+		0CAA0E841BCA2DFF00BCA6FC /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		0CAA0E851BCA2DFF00BCA6FC /* ToDoListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToDoListTableViewController.xib; sourceTree = "<group>"; };
+		0CAA0E881BCA2E0B00BCA6FC /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0CAA0E8C1BCA313000BCA6FC /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoListTableViewCell.swift; path = ../ToDoListTableViewCell.swift; sourceTree = "<group>"; };
+		0CAA0E8D1BCA313000BCA6FC /* ToDoListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToDoListTableViewCell.xib; path = ../ToDoListTableViewCell.xib; sourceTree = "<group>"; };
+		0CAA0E981BCA42C600BCA6FC /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		0CAA0E991BCA42C600BCA6FC /* AddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTaskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,15 @@
 		0C5FAC8E1BB3A43C005193F8 /* To-Do-List */ = {
 			isa = PBXGroup;
 			children = (
-				0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */,
-				0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */,
-				0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */,
+				0CAA0E8C1BCA313000BCA6FC /* ToDoListTableViewCell.swift */,
+				0CAA0E8D1BCA313000BCA6FC /* ToDoListTableViewCell.xib */,
+				0CAA0E841BCA2DFF00BCA6FC /* ToDoListTableViewController.swift */,
+				0CAA0E881BCA2E0B00BCA6FC /* Task.swift */,
+				0CAA0E851BCA2DFF00BCA6FC /* ToDoListTableViewController.xib */,
 				0C5FAC8F1BB3A43C005193F8 /* AppDelegate.swift */,
-				0C5FAC911BB3A43C005193F8 /* ViewController.swift */,
 				0C5FAC931BB3A43C005193F8 /* Main.storyboard */,
-				0C8E86911BC9DD8C005D18AE /* Task.swift */,
+				0CAA0E981BCA42C600BCA6FC /* AddTaskViewController.swift */,
+				0CAA0E991BCA42C600BCA6FC /* AddTaskViewController.xib */,
 				0C5FAC961BB3A43C005193F8 /* Assets.xcassets */,
 				0C5FAC981BB3A43C005193F8 /* LaunchScreen.storyboard */,
 				0C5FAC9B1BB3A43C005193F8 /* Info.plist */,
@@ -134,9 +140,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C5FAC9A1BB3A43C005193F8 /* LaunchScreen.storyboard in Resources */,
+				0CAA0E9B1BCA42C600BCA6FC /* AddTaskViewController.xib in Resources */,
+				0CAA0E871BCA2DFF00BCA6FC /* ToDoListTableViewController.xib in Resources */,
 				0C5FAC971BB3A43C005193F8 /* Assets.xcassets in Resources */,
-				0C8E86961BC9DF29005D18AE /* TaskTableViewController.xib in Resources */,
 				0C5FAC951BB3A43C005193F8 /* Main.storyboard in Resources */,
+				0CAA0E8F1BCA313000BCA6FC /* ToDoListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8E86951BC9DF29005D18AE /* TaskTableViewController.swift in Sources */,
-				0C8E86921BC9DD8C005D18AE /* Task.swift in Sources */,
-				0C5FAC921BB3A43C005193F8 /* ViewController.swift in Sources */,
-				0CAA0AD11BC9DBF0001E5F74 /* ToDoListTableViewCell.swift in Sources */,
+				0CAA0E891BCA2E0B00BCA6FC /* Task.swift in Sources */,
+				0CAA0E8E1BCA313000BCA6FC /* ToDoListTableViewCell.swift in Sources */,
 				0C5FAC901BB3A43C005193F8 /* AppDelegate.swift in Sources */,
+				0CAA0E861BCA2DFF00BCA6FC /* ToDoListTableViewController.swift in Sources */,
+				0CAA0E9A1BCA42C600BCA6FC /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
