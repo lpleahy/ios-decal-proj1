@@ -12,6 +12,7 @@ class ToDoListTableViewCell: UITableViewCell {
 
     // MARK: Properties
     @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var checkBox: CheckBox!
     
     override func awakeFromNib() {
         super.awakeFromNib()

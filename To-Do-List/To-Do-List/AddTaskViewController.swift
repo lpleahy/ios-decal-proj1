@@ -10,10 +10,18 @@ import UIKit
 
 class AddTaskViewController: UIViewController, UITextFieldDelegate {
 
-    
     @IBOutlet weak var addTaskTextField: UITextField!
     @IBOutlet weak var saveTask: UIBarButtonItem!
     
+    @IBAction func cancel(sender: UIBarButtonItem) {
+        let isPresentingInAddTaskMode = presentedViewController is UINavigationController
+        
+        if isPresentingInAddTaskMode {
+            dismissViewControllerAnimated(true, completion: nil)
+        } else {
+            navigationController!.popViewControllerAnimated(true)
+        }
+    }
     var task = Task?()
     
     override func viewDidLoad() {
