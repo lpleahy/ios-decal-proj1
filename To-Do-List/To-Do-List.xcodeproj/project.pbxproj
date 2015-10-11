@@ -12,6 +12,10 @@
 		0C5FAC951BB3A43C005193F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC931BB3A43C005193F8 /* Main.storyboard */; };
 		0C5FAC971BB3A43C005193F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC961BB3A43C005193F8 /* Assets.xcassets */; };
 		0C5FAC9A1BB3A43C005193F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5FAC981BB3A43C005193F8 /* LaunchScreen.storyboard */; };
+		0C8E86921BC9DD8C005D18AE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E86911BC9DD8C005D18AE /* Task.swift */; settings = {ASSET_TAGS = (); }; };
+		0C8E86951BC9DF29005D18AE /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0C8E86961BC9DF29005D18AE /* TaskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		0CAA0AD11BC9DBF0001E5F74 /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		0C5FAC961BB3A43C005193F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C5FAC991BB3A43C005193F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5FAC9B1BB3A43C005193F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8E86911BC9DD8C005D18AE /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewController.xib; sourceTree = "<group>"; };
+		0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToDoListTableViewCell.swift; path = ../ToDoListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,13 @@
 		0C5FAC8E1BB3A43C005193F8 /* To-Do-List */ = {
 			isa = PBXGroup;
 			children = (
+				0CAA0AD01BC9DBF0001E5F74 /* ToDoListTableViewCell.swift */,
+				0C8E86931BC9DF29005D18AE /* TaskTableViewController.swift */,
+				0C8E86941BC9DF29005D18AE /* TaskTableViewController.xib */,
 				0C5FAC8F1BB3A43C005193F8 /* AppDelegate.swift */,
 				0C5FAC911BB3A43C005193F8 /* ViewController.swift */,
 				0C5FAC931BB3A43C005193F8 /* Main.storyboard */,
+				0C8E86911BC9DD8C005D18AE /* Task.swift */,
 				0C5FAC961BB3A43C005193F8 /* Assets.xcassets */,
 				0C5FAC981BB3A43C005193F8 /* LaunchScreen.storyboard */,
 				0C5FAC9B1BB3A43C005193F8 /* Info.plist */,
@@ -123,6 +135,7 @@
 			files = (
 				0C5FAC9A1BB3A43C005193F8 /* LaunchScreen.storyboard in Resources */,
 				0C5FAC971BB3A43C005193F8 /* Assets.xcassets in Resources */,
+				0C8E86961BC9DF29005D18AE /* TaskTableViewController.xib in Resources */,
 				0C5FAC951BB3A43C005193F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8E86951BC9DF29005D18AE /* TaskTableViewController.swift in Sources */,
+				0C8E86921BC9DD8C005D18AE /* Task.swift in Sources */,
 				0C5FAC921BB3A43C005193F8 /* ViewController.swift in Sources */,
+				0CAA0AD11BC9DBF0001E5F74 /* ToDoListTableViewCell.swift in Sources */,
 				0C5FAC901BB3A43C005193F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 				0C5FACA01BB3A43C005193F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
