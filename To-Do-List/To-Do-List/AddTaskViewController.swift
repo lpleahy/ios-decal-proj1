@@ -22,6 +22,7 @@ class AddTaskViewController: UIViewController, UITextFieldDelegate {
             navigationController!.popViewControllerAnimated(true)
         }
     }
+    
     var task = Task?()
     
     override func viewDidLoad() {
@@ -37,11 +38,6 @@ class AddTaskViewController: UIViewController, UITextFieldDelegate {
         checkValidTaskName()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if saveTask === sender {
             let taskName = addTaskTextField.text ?? ""

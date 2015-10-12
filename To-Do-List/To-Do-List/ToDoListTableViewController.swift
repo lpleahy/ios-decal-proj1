@@ -10,8 +10,41 @@ import UIKit
 
 class ToDoListTableViewController: UITableViewController {
     
+    @IBAction func checkBox(sender: AnyObject) {
+        if let checkBox = sender as? CheckBox {
+            if !checkBox.isChecked {
+                completedTasks += 1
+                completed[completedTasks] = NSDate()
+                checkBox.index = completedTasks
+            } else {
+                completed[checkBox.index!] = nil
+            }
+        }
+    }
+    
     var tasks = [Task]()
     var completedTasks = 0
+    var completed = [Int: NSDate]()
+    
+    func checkToggled(isChecked: Bool, sender: AnyObject?) {
+        if let selected = sender as? ToDoListTableViewCell {
+            let indexPath = tableView.indexPathForCell(selected)!
+            let selectedTask = tasks[indexPath.row]
+            selectedTask.isChecked = isChecked
+            completedTasks += 1
+        }
+    }
+    
+    func cleanCompleted() -> Int {
+        var counter = 0
+        for date in completed {
+            let time = -date.1.timeIntervalSinceNow
+            if time / 3600.0  < 24 {
+                counter += 1
+            }
+        }
+        return counter
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +68,6 @@ class ToDoListTableViewController: UITableViewController {
         tasks += [taskOne, taskTwo]
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -55,6 +81,7 @@ class ToDoListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(taskIdentifier, forIndexPath: indexPath) as! ToDoListTableViewCell
         let task = tasks[indexPath.row]
         cell.cellLabel.text = task.taskName
+        cell.isChecked = task.isChecked
         return cell
     }
     
@@ -86,9 +113,6 @@ class ToDoListTableViewController: UITableViewController {
         return true
     }
 
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowDetail" {
             let taskDetailViewController = segue.destinationViewController as! AddTaskViewController
@@ -99,6 +123,9 @@ class ToDoListTableViewController: UITableViewController {
             }
         } else if segue.identifier == "AddItem" {
             print("Adding a new task...")
+        } else if segue.identifier == "CompletedTasks" {
+            let completedTaskViewController = segue.destinationViewController as! CompletedTasksViewController
+            completedTaskViewController.counter = cleanCompleted()
         }
     }
     

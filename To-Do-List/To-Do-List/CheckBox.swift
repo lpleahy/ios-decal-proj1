@@ -16,12 +16,13 @@ class CheckBox: UIButton {
     var isChecked: Bool = false {
         didSet {
             if isChecked == true {
-                self.setImage(uncheckedBox, forState: .Normal)
-            } else {
                 self.setImage(checkedBox, forState: .Normal)
+            } else {
+                self.setImage(uncheckedBox, forState: .Normal)
             }
         }
     }
+    var index: Int?
     
     override func awakeFromNib() {
         self.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
